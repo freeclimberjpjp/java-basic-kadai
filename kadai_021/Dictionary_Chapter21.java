@@ -30,5 +30,18 @@ public class Dictionary_Chapter21 {
         return dictionary.containsKey(word);
     }
 
+    
+
+    // 配列で複数の英単語をまとめて調べて出力するメソッド（referer）
+    public void referer(String[] words) {
+        for (String word : words) {
+            if (containsWord(word)) {
+                System.out.println(word + "：" + searchWord(word));
+            } else {
+                System.out.println(word + "は辞書に存在していません");
+            }
+        }
+    }
+
     // ...今後のメソッド追加用...
 }
