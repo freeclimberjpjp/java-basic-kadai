@@ -36,9 +36,9 @@ public class Dictionary_Chapter21 {
     public void referer(String[] words) {
         for (String word : words) {
             if (containsWord(word)) {
-                System.out.println(word + "：" + searchWord(word));
+                System.out.println(word + "の意味は" + searchWord(word));
             } else {
-                System.out.println(word + "は辞書に存在していません");
+                System.out.println(word + "は辞書に存在しません");
             }
         }
     }
